@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOUTHWEST — Official</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',sans-serif;background:#050505;color:#f5f5f5;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.09;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:5px 5px;z-index:10}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:22px 6%;backdrop-filter:blur(14px);background:#050505aa;border-bottom:1px solid #ffffff15}
+.logo{font-size:22px;font-weight:700;letter-spacing:5px}
+.navlinks{display:flex;gap:28px;font-size:13px;text-transform:uppercase;letter-spacing:2px}
+.navlinks a{opacity:.7;transition:.2s}.navlinks a:hover{opacity:1}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 6% 70px;position:relative;overflow:hidden}
+.glow{position:absolute;width:55vw;height:55vw;border-radius:50%;background:radial-gradient(circle,#ffffff18,transparent 65%);filter:blur(20px)}
+.kicker{font-size:12px;letter-spacing:6px;text-transform:uppercase;opacity:.55;margin-bottom:22px}
+h1{font-size:clamp(70px,15vw,190px);line-height:.78;letter-spacing:-8px;font-weight:700;text-transform:uppercase}
+.tagline{margin:30px auto;max-width:540px;color:#aaa;font-size:16px;line-height:1.6}
+.cta{display:inline-flex;gap:10px;align-items:center;border:1px solid #fff;padding:14px 24px;text-transform:uppercase;letter-spacing:2px;font-size:12px;transition:.25s}
+.cta:hover{background:#fff;color:#000;transform:translateY(-2px)}
+section{padding:110px 6%;max-width:1250px;margin:auto}
+.sectiontop{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}
+.label{font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:.5}
+h2{font-size:clamp(38px,7vw,80px);letter-spacing:-3px}
+.release{display:grid;grid-template-columns:1.1fr 1fr;gap:45px;align-items:center}
+.cover{aspect-ratio:1/1;background:linear-gradient(135deg,#1c1c1c,#080808);border:1px solid #ffffff22;display:grid;place-items:center;position:relative;overflow:hidden}
+.cover:before,.cover:after{content:"";position:absolute;border:1px solid #fff4;border-radius:50%;width:70%;height:70%}
+.cover:after{width:42%;height:42%;border-style:dashed}
+.covertext{font-size:clamp(32px,6vw,75px);font-weight:700;letter-spacing:-4px;z-index:2}
+.meta{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#888;margin-bottom:15px}
+.release h3{font-size:48px;letter-spacing:-2px;margin-bottom:18px}
+.release p{color:#aaa;line-height:1.7;margin-bottom:28px}
+.links{display:flex;gap:10px;flex-wrap:wrap}.links a{border:1px solid #ffffff25;padding:12px 15px;font-size:11px;text-transform:uppercase;letter-spacing:1.5px}.links a:hover{border-color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{border:1px solid #ffffff18;padding:25px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;background:#0a0a0a;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#ffffff55}
+.card b{font-size:25px}.card span{font-size:11px;letter-spacing:2px;color:#777;text-transform:uppercase}
+.socials{display:flex;gap:12px;flex-wrap:wrap}
+.socials a{font-size:12px;letter-spacing:2px;text-transform:uppercase;border-bottom:1px solid #555;padding-bottom:6px}
+footer{border-top:1px solid #ffffff15;padding:45px 6%;display:flex;justify-content:space-between;color:#666;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+@media(max-width:700px){.navlinks{display:none}.release{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hero h1{letter-spacing:-5px}section{padding:80px 6%}.release h3{font-size:38px}footer{flex-direction:column;gap:15px}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#">SW.</a>
+  <div class="navlinks"><a href="#music">Music</a><a href="#releases">Releases</a><a href="#about">About</a><a href="#socials">Socials</a></div>
+</nav>
+
+<header class="hero">
+  <div class="glow"></div>
+  <div>
+    <div class="kicker">Official Artist Site</div>
+    <h1>SOUTH<br>WEST</h1>
+    <p class="tagline">Music from the other side of the screen. New sounds, late nights, and everything in between.</p>
+    <a class="cta" href="#music">Listen now ↓</a>
+  </div>
+</header>
+
+<section id="music">
+  <div class="sectiontop"><div><div class="label">01 / Featured</div><h2>Music.</h2></div></div>
+  <div class="release">
+    <div class="cover"><div class="covertext">SW_01</div></div>
+    <div>
+      <div class="meta">Latest release · 2026</div>
+      <h3>Your next release.</h3>
+      <p>This space is ready for your newest single or project. Add the artwork, title, release date and streaming links here.</p>
+      <div class="links">
+        <a href="#">Spotify</a><a href="#">Apple Music</a><a href="#">YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="releases">
+  <div class="sectiontop"><div><div class="label">02 / Archive</div><h2>Releases.</h2></div></div>
+  <div class="grid">
+    <div class="card"><span>Single · 2026</span><b>NEW SINGLE</b><span>Listen →</span></div>
+    <div class="card"><span>Single · 2026</span><b>TRACK 02</b><span>Listen →</span></div>
+    <div class="card"><span>Project · 2026</span><b>PROJECT 01</b><span>Listen →</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sectiontop"><div><div class="label">03 / Artist</div><h2>About.</h2></div></div>
+  <p style="max-width:720px;color:#aaa;font-size:19px;line-height:1.8">
+    SOUTHWEST is an independent artist building a world through sound. This section can become your real bio, story, influences and creative vision.
+  </p>
+</section>
+
+<section id="socials">
+  <div class="sectiontop"><div><div class="label">04 / Connect</div><h2>Find me.</h2></div></div>
+  <div class="socials">
+    <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a><a href="#">Spotify</a><a href="#">Apple Music</a>
+  </div>
+</section>
+
+<footer><span>© 2026 SOUTHWEST</span><span>Made for the music.</span></footer>
+</body>
+</html>
